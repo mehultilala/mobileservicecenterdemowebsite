@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" id="inner-template"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2"></script>
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#inner-template::-webkit-scrollbar { display: none;}
+/* Hide scrollbar for IE, Edge and Firefox */
+#inner-template {  -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */}
+.unset-hover:hover {color: unset!important;background-color: unset!important;}
+.remove-text-decor {text-decoration: none;}
+.progress-container { position: fixed; bottom: 0px; width: 100%; height: 8px; background: black;}
+.progress-bar { height: 8px; background: white; width: 0%; }
+</style>
+</head><body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large unset-hover" style="font-weight: bold; font-size: 1.2rem;">PHONEIX</span></a>
+  </div>
+  <div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#location" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">LOCATION</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#gallary" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center" style="display: block;">
+    <img src="./W3.CSS Template_files/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./W3.CSS Template_files/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center" style="display: none;">
+    <img src="./W3.CSS Template_files/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-light-grey w3-xlarge" style="padding-top: 20px; padding-bottom: 20px;">
+  <a class="remove-text-decor" href="https://phoneix.business.site/" target="_blank">
+  	<i class="fa fa-internet-explorer w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+  <a class="remove-text-decor" href="https://www.facebook.com/phoneixthemobilelabrajkot" target="_blank">
+  	<i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <a class="remove-text-decor" href="https://www.google.com/maps/place/PHONEIX/data=!3m1!4b1!4m2!3m1!1s0x3959cbb446573a5f:0x897356943246aab9" target="_blank">
+  	<i class="fa fa-map-marker w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+</footer>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+    <h2 class="w3-wide">THE MOBILE LAB</h2>
+    <p class="w3-opacity"><i>Mobile Lover</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      itation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-row w3-padding-16" style="text-align: left; display: none;">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-phone w3-opacity" style="width:30px;"></i> <a href="tel:+9727552111" class="remove-text-decor">Phone: <span>97275 52111</span></a><br>
+        <i class="fa fa-map-marker w3-opacity" style="width:30px;"></i> Address: 101 - First Floor Ashish Commercial Complex Opposite Apple Bite Astron's Chowk, Sardar Nagar Main Rd, Sardarnagar, Rajkot, Gujarat 360001<br>
+      </div>
+    </div>
+    <div class="w3-row w3-padding-32" style="display: none;">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="./W3.CSS Template_files/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="./W3.CSS Template_files/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="./W3.CSS Template_files/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="location">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">OUR PRESENCE</h2>
+      <p class="w3-opacity w3-center"><i>Remember to contanct us!</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="./W3.CSS Template_files/map.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p style="margin-bottom: 0px;"><b>Sardarnagar, Rajkot</b></p>
+            <p class="w3-opacity" style="margin-top: 0px;">Since 2015</p>
+            <a href="tel:+9727552111" class="remove-text-decor">Phone: <span>97275 52111</span></a><br>
+            <p>101 - Ashish Commercial Complex <br> Opposite Apple Bite Astron Chowk <br> Sardar Nagar Main Rd, Sardarnagar, Rajkot, Gujarat, 360001</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="window.open('https://www.google.com/maps/place/PHONEIX/data=!3m1!4b1!4m2!3m1!1s0x3959cbb446573a5f:0x897356943246aab9')">Get Directions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Ticket Modal -->
+  <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6">
+        <form action="https://www.w3schools.com/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+            </div>
+          </div>
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Page Content -->
+</div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="gallary">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">GALLARY</h2>
+      <p class="w3-opacity w3-center"><i>Upgrade your gadget and be funky!</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="./W3.CSS Template_files/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="./W3.CSS Template_files/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="./W3.CSS Template_files/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Image of location/map -->
+<img src="./W3.CSS Template_files/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+
+  <a class="remove-text-decor" href="https://phoneix.business.site/" target="_blank">
+  	<i class="fa fa-internet-explorer w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+  <a class="remove-text-decor" href="https://www.facebook.com/phoneixthemobilelabrajkot" target="_blank">
+  	<i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <a class="remove-text-decor" href="https://www.google.com/maps/place/PHONEIX/data=!3m1!4b1!4m2!3m1!1s0x3959cbb446573a5f:0x897356943246aab9" target="_blank">
+  	<i class="fa fa-map-marker w3-hover-opacity" style="font-size: 23px;"></i>
+  </a>
+  <p class="w3-medium">Get Best For Your Mobile @ PHONEIX</p>
+</footer>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//When the user scrolls the page, execute myFunction 
+window.onscroll = function() {scrollProgressFn()};
+
+function scrollProgressFn() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+<style>
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style>
+</html>
